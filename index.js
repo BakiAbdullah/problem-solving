@@ -96,7 +96,6 @@ const sumOfEvenNumbers = () => {
     }
     return accumulator;
   }, 0);
-  console.log(sum);
 };
 sumOfEvenNumbers();
 
@@ -112,9 +111,9 @@ const isLeapYear = (year) => {
     return true;
   }
   return false;
-};
-isLeapYear(2024);
 
+};
+console.log(isLeapYear(2024)); // true
 
 /*
  *** Task-7: Unique Values
@@ -122,7 +121,7 @@ isLeapYear(2024);
  **
  */
 
-const nums = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10];
+const nums = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10];
 const getUniqueNumbers = () => {
   const uniqueNumbers = [...new Set(nums)];
   return uniqueNumbers;
